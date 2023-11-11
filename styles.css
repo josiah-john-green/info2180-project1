@@ -1,11 +1,370 @@
-/* Add your CSS to this file */
-body {
+/* Section: Reusables */
+
+body 
+{
+
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
 }
 
-.container {
+.container 
+{
+
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+
 }
+
+img
+{
+
+    width: 250px;
+    height: 250px;
+
+}
+
+
+/* Section: Header*/
+
+header
+{
+
+    background-color: white;
+    padding: 30px 0 30px 0;
+
+
+}
+
+header .container{
+
+    display: grid;
+    grid-template-columns: 200px 700px; 
+    align-items: center;
+    gap: 250px;
+
+}
+
+header .container h1
+{
+
+    color: #6b7280;
+    font-size: 18px;
+    margin: 0;
+
+}
+
+nav ul
+{
+    
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);      
+    gap: 20px;
+
+}
+
+nav ul li
+{
+
+    list-style: none;
+   
+}
+
+nav ul li a
+{
+
+    color: #6b7280;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;  
+
+}
+
+nav ul li a:hover
+{
+
+    color: #5A67D8;    
+
+}
+
+/* Section: Hero*/
+
+.overview-hero
+{
+
+    background-color: #E2E8F0;
+    padding: 25px 0 25px 0;
+
+}
+
+.overview-hero .container
+{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 5px;
+
+}
+
+.overview-hero-text
+{
+
+    padding-top: 50px;
+
+} 
+
+.overview-hero-image img{
+
+    width: 400px;
+    height: 300px;
+
+}
+
+/*Section: Learn About*/
+
+.learn-about
+{
+
+    padding: 50px 0 50px 0;
+
+}
+
+.learn-about .container h2
+{
+
+    color: #48BB78;
+    font-size: 24px;
+    padding-bottom: 20px;
+
+}
+
+.learn-about .container h3
+{
+
+    color: #48BB78;
+    font-size: 21px;
+
+}
+
+.cards
+{
+
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    gap: 50px;
+
+}
+
+.card
+{
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border:  1px solid #E2E8F0;
+    padding: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.card:hover{
+
+    transform: scale(1.02);
+
+}
+
+/* Section: Testing*/
+
+.testing
+{
+
+    background-color: #4A5568;
+    padding: 100px 0 100px 0;
+    color: white;
+
+}
+
+
+.testing .container
+{
+
+    display: grid;
+    grid-template-columns: 600px 200px;
+
+}
+
+.cta{
+
+    position: relative;
+    left: 150px;
+    top: 90px;
+
+}
+
+
+.cta a
+{
+
+    background-color: #48BB78;
+    color: white;
+    border-radius: 5px;  
+    list-style: none;
+    text-decoration: none; 
+    text-transform: uppercase;  
+    padding: 20px 40px;
+    cursor: pointer;  
+    transition: ease-in-out 0.3s;
+
+}
+
+.cta a:hover
+{
+
+    color: white;   
+
+}
+
+
+/*Section: Learn About*/
+
+.stories
+{
+
+    padding: 25px 0 25px 0;
+
+}
+
+.stories .container h2
+{
+
+    color: #5A67D8;
+
+}
+
+article
+{
+
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0px 30px 0px;
+    gap: 100px;
+
+}
+
+.article-body a
+{
+
+    color: #5A67D8;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none; 
+    list-style: none;
+    cursor: pointer;  
+
+    
+
+}
+
+article img
+{
+
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+
+
+}
+
+/*Section: Newsletter*/
+
+.newsletter
+{
+
+    background-color: #48BB78;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+
+}
+
+.newssletter .container
+{
+
+    width: 400px;
+
+}
+
+form
+{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    gap: 10px;
+    
+}
+
+
+.form-group input
+{
+
+    background-color: white;
+    color: #6b7280;
+    width: 500px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: 70px;  
+    font-size: 17.2px;
+    padding: 10px 20px;
+    cursor: pointer;  
+
+}
+
+form button
+{
+
+    background-color: #5A67D8;
+    color: white;
+    width: 310px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17.2px;
+    padding: 10px 20px;
+    cursor: pointer;  
+
+}
+
+form button:hover
+{
+
+    background-color: #4c54d2;
+
+}
+
+/*Section: Footer*/
+
+
+footer
+{
+
+    background-color: #4A5568;
+    color: white;
+
+}
+
+footer .container
+{
+
+    padding: 20px 0 20px 0;
+
+}
+
+
